@@ -597,45 +597,9 @@ function createFinalPage() {
     listingContainer.classList.add('product-listings');
 
     let p = document.createElement('p');
-    p.innerText = 'Those who value vintage pieces, and shop for them online, know firsthand how the practice differs from sorting through racks at a shop around the corner.<br><br> To examine the language used in vintage clothing product descriptions is to turn an eye toward the realities of vintage fashion collection online and explore the subculture the way in which most of us encounter it.';
+    p.innerHTML = 'Those who value vintage pieces, and shop for them online, know firsthand how the practice differs from sorting through racks at a shop around the corner.<br><br> To examine the language used in vintage clothing product descriptions is to turn an eye toward the realities of vintage fashion collection online and explore the subculture the way in which most of us encounter it.<br><br>Essay by: Cecilia Knaub';
     
-    listingContainer.appendChild(p);
     listingContainer.style.border = 'none';
-
-    next_button.innerHTML = 'Exit';
-    listingContainer.appendChild(next_button);
-    container.appendChild(listingContainer)
-
-    next_button.style.backgroundColor = 'white';
-    next_button.style.color = 'black';
-    
-    next_button.addEventListener("mouseover",function(){
-        this.style.backgroundColor = '#004aad';
-        this.style.color = 'white';
-        this.style.transition = 'all 0.15s';
-        this.style.cursor = 'pointer';
-    
-    })
-    
-    next_button.addEventListener("mouseout",function(){
-        this.style.backgroundColor = 'white';
-        this.style.color = 'black';
-        this.style.transition = 'all 0.15s';
-        this.style.cursor = 'pointer';
-    });
-
-    next_button.addEventListener("click",function(){
-        removeButton();
-        document.body.innerHTML = "";
-
-        let container = document.createElement('div');
-        container.classList.add('container');
-
-        let p1 = document.createElement('p');
-        p1.innerHTML = 'Essay by: Cecilia Knaub'
-
-        container.appendChild(p1);
-        container.appendChild(next_button)
-        document.body.appendChild(container);
-    })
+    listingContainer.appendChild(p);
+    container.appendChild(listingContainer);
 }
