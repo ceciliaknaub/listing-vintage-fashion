@@ -626,13 +626,14 @@ function createFinalPage() {
 
     next_button.addEventListener("click",function(){
         document.body.innerHTML = "";
+        removeButton();
 
         let container = document.createElement('div');
         container.classList.add('container');
 
         let p1 = document.createElement('p');
         p1.innerHTML = 'Essay by: Cecilia Knaub'
-        
+
         container.appendChild(p1);
         container.appendChild(next_button)
         document.body.appendChild(container);
