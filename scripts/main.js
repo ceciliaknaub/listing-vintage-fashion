@@ -583,7 +583,7 @@ function createNarrativePage() {
         document.querySelector(".product-listings-search-button").addEventListener("click", function() {
             document.querySelector('.product-listings-content-box').innerHTML = '';
 
-            createFinalPage()
+            createFinalPage();
 
         });
     },15000);
@@ -625,8 +625,8 @@ function createFinalPage() {
     });
 
     next_button.addEventListener("click",function(){
-        document.body.innerHTML = "";
         removeButton();
+        document.body.innerHTML = "";
 
         let container = document.createElement('div');
         container.classList.add('container');
