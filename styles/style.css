@@ -1,0 +1,185 @@
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  height: 97%;
+  background-color: ghostwhite ;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 97%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.content-box {
+  width: 65%;
+  height: 75%;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items:center;
+  justify-content: center;
+}
+
+.product-listings-content-box {
+  border: 1px solid black;
+  border-radius: 24px;
+  width: 75%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+}
+.product-listings {
+  border: 1px solid black;
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.product-listings p {
+  padding: 2%;
+}
+
+.search-container {
+  width: 80%;
+  height: 12%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.search-bar {
+  border: 1px solid black;
+  height: 100%;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  font-size: 24;
+  text-indent: 5%;
+}
+
+.product-listings-search-button {
+  border: 1px solid black;
+  height: 100%;
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-listing-item, .listing-buttons {
+  border: 1px solid black;
+  border-radius: 24px;
+  width: 45%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.circle {
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+  background-color: darkgreen;
+  transition: all 0.1s;
+}
+
+.word-box {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.word-button {
+  border-radius: 5px;
+  height: 10%;
+  width: 15%;
+}
+
+.narrative-button {
+  width: 95%;
+  height: 25%;
+  border-radius: 24px;
+  background-color: #f2f3f4;
+}
+
+/*.designer-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}*/
+
+button {
+  background-color: white;
+  border: none;
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  list-style-type: none;
+}
+.search-button, .listing-button, .single-listing-button {
+  fill: white;
+}
+
+.web-page, .listings, .single-listing, .clothes {
+  display: none;
+  fill: white;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+
+/*Change color slider function from https://www.geeksforgeeks.org/how-to-change-background-color-using-html-rounded-slider/#*/
+
+.slidecontainer {
+  width: 100%;
+}
+
+.custom-slider-range:hover {
+  opacity: 1.2;
+  transition: opacity 0.4s;
+}
+
+
